@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0A652BB5-C5D8-401D-A4B4-E4DAA3A609AE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>template</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD90ACE8-5447-4CCB-945A-090613D4BAEF</key>
+		<string>https://github.com/wangusin/SmallProjectTemplate.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>template/template.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD90ACE8-5447-4CCB-945A-090613D4BAEF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wangusin/SmallProjectTemplate.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD90ACE8-5447-4CCB-945A-090613D4BAEF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD90ACE8-5447-4CCB-945A-090613D4BAEF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SmallProjectTemplate</string>
+		</dict>
+	</array>
+</dict>
+</plist>
