@@ -356,5 +356,5 @@ void StartScene::createBookSpr()
 void StartScene::gotoAppStore()
 {
     ObjCCalls* objc = new ObjCCalls();
-    objc->OpenURL("https://itunes.apple.com/tw/artist/pan-asia-cultural/id552873453?l=zh") ;
+    objc->OpenURL("https://itunes.apple.com/tw/artist/pan-asia-cultural/id552873453?l=zh&mt=8") ;
 }
