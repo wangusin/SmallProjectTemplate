@@ -22,6 +22,8 @@
     
     UIBarButtonItem *mBackButton;
     
+    int count;
+    
 }
 
    

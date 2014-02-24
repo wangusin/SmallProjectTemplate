@@ -25,6 +25,7 @@
     if (self) {
         
         // init code here.
+        count = 0;
         
     }
     
@@ -99,6 +100,8 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)thisWebView{
     
+    count++;
+    
     [mWebView setUserInteractionEnabled:YES];
     
     mLayerWebView->webViewDidFinishLoad();
@@ -109,19 +112,21 @@
 
 - (void)webView:(UIWebView *)thisWebView didFailLoadWithError:(NSError *)error {
     
-//    if ([error code] != -999 && error != NULL) { //error -999 happens when the user clicks on something before it's done loading.
-//        
-//           
-//        
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Unable to load the page. Please keep network connection."
-//                              
-//                                                       delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-//        
-//        [alert show];
-//        
-//        [alert release];
-//        
-//    }
+    if (count == 0) {
+        if ([error code] != -999 && error != NULL) { //error -999 happens when the user clicks on something before it's done loading.
+            
+               
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Unable to load the page. Please keep network connection."
+                                  
+                                                           delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            
+            [alert show];
+            
+            [alert release];
+            
+        }
+    }
     
 }
 
@@ -140,6 +145,21 @@
     
     mLayerWebView->onBackbuttonClick();
     
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    //Code.....
+    
+    mWebView.delegate = nil; //keep the webview from firing off any extra messages
+    
+    //remove items from the Superview...just to make sure they're gone
+    [backButton removeFromSuperview];
+    
+    [mWebView removeFromSuperview];
+    
+    [mView removeFromSuperview];
+    
+    mLayerWebView->onBackbuttonClick();
 }
 
 @end
