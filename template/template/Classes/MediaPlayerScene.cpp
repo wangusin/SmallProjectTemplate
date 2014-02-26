@@ -27,6 +27,8 @@ CCScene* MediaPlayerScene::scene(const char * fileName)
 }
 MediaPlayerScene::~MediaPlayerScene(){
     CCLog("Exit MediaPlayerScene Scene");
+    
+    CCNotificationCenter::sharedNotificationCenter()->removeAllObservers(this);
 }
 MediaPlayerScene* MediaPlayerScene::create(const char * fileName) {
     
